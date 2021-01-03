@@ -1,0 +1,19 @@
+
+<div class="login-box">
+    <h1>Login</h1>
+
+    <form [formGroup]="AddCoach" >
+
+        <div class="text-box">
+            <input type="text" placeholder="Email" formControlName="email" value="">
+        </div>
+
+        <div class="text-box">
+            <input type="text" placeholder="Password" formControlName="password" value="">
+        </div>
+
+        <button type="submit" class="btnRegister">Sign in</button>
+
+    </form>
+    <a routerLink="">Create an account</a>
+</div>

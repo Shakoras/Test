@@ -1,0 +1,57 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+            <h3>Welcome</h3>
+            <p>You are 30 seconds away from earning your own money and lead the world of fit people!</p>
+        </div>
+        <div class="col-md-9 register-right">
+            <form [formGroup]="checkoutForm" (ngSubmit)="Inscription(checkoutForm.value, $event)">
+                <div class="tab-content" id="">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Apply as a Coach</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" formControlName="name" placeholder="First Name *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" formControlName="last_name" placeholder="Last Name *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" formControlName="password" placeholder="Your Password *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" minlength="8" maxlength="8" formControlName="cin"  placeholder="Your Cin *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" formControlName="experience"  placeholder="Your Experience *"   />
+                                </div>
+                                <p>Already have an account? <a routerLink="../coachlogin">Login</a></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" formControlName="email" placeholder="Your Email *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" minlength="8" maxlength="8" formControlName="tell" name="txtEmpPhone" class="form-control" placeholder="Your Phone *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" minlength="2" maxlength="2" formControlName="age"  placeholder="Your Age *"   />
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" formControlName="tax" placeholder="Your Cost *"   />
+                                </div>
+                                <button type="submit" class="btnRegister">Sign up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
